@@ -23,7 +23,7 @@ public class TaskServiceTests {
     @Test
     public void testAddTask() {
         long numberOfTasks = repository.count();
-        Task task = new Task("TODO", "Work");
+        Task task = new Task("PorHacer", "Trabajo");
         taskService.add(task);
 
         long newNumberOfTasks = repository.count();
@@ -32,7 +32,7 @@ public class TaskServiceTests {
 
     @Test
     public void testGetTask() {
-        Task task = new Task("TODO", "Work");
+        Task task = new Task("PorHacer", "Trabajo");
         Task r = taskService.add(task);
 
         Task newTask = taskService.getTask(r.getId());
