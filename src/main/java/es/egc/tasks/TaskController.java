@@ -29,7 +29,7 @@ public class TaskController {
     }
 
 
-    @RequestMapping(value = "/tasks/{taskId}")
+    @RequestMapping(value = "/tareas/{taskId}")
     public Task taskById(@PathVariable Long taskId) {
         return taskService.getTask(taskId);
     }
